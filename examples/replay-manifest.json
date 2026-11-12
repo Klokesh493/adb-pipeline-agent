@@ -1,0 +1,18 @@
+[
+  {
+    "name": "Bundled scenario",
+    "args": [
+      "agent.py",
+      "example.json"
+    ],
+    "expected": "examples/Bundled scenario.stdout.txt"
+  },
+  {
+    "name": "Regression scenario",
+    "args": [
+      "agent.py",
+      "examples/regression.json"
+    ],
+    "expected": "examples/Regression scenario.stdout.txt"
+  }
+]

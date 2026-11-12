@@ -31,3 +31,30 @@ flowchart LR
 ```
 
 [Architecture and data flow](docs/ARCHITECTURE.md) · [Business problem, demo, and verification](docs/CASE_STUDY.md)
+
+## Run the project
+
+### Local setup
+
+Run `make verify` with Python 3 and Make installed.
+
+### CLI usage
+
+```sh
+python3 agent.py example.json
+```
+
+### Replay usage
+
+Run `make replay` to replay the checked-in inputs. The runner compares stdout with the baseline, reports differences, and exits nonzero on regression.
+
+[Replay cases](examples/replay-manifest.json) · [Generated report](reports/replay.md) · [Rule implementation](docs/RULES.md)
+
+### Run tests
+
+[Verification report](reports/verification.md) · [Business problem, sample behavior, and limitations](docs/CASE_STUDY.md)
+
+
+### Limitations
+
+The verification report covers the bundled local examples. See the [case study](docs/CASE_STUDY.md) for project-specific assumptions and operating limits.

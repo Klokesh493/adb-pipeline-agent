@@ -1,0 +1,8 @@
+{
+  "retry": [
+    "extract"
+  ],
+  "blocked": [
+    "transform"
+  ]
+}
