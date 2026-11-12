@@ -4,11 +4,14 @@ Identify failed dependencies before retrying an Azure Databricks-style pipeline.
 
 ```mermaid
 flowchart LR
-    N0["example.json"]
-    N1["agent.py"]
-    N2["Check task dependency state before recommending a retry."]
-    N3["Result for operator review"]
-    N0 --> N1 --> N2 --> N3
+    A["Task states and dependency lists"]
+    B["Validate dependency references"]
+    C{"Any prerequisite incomplete?"}
+    D["Blocked task list"]
+    E["Failed eligible task enters retry list"]
+    A --> B --> C
+    C -->|Yes| D
+    C -->|No| E
 ```
 
 ## Operational boundaries

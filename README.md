@@ -14,4 +14,16 @@ Run `make verify` with Make and Python 3 installed. The sample runs through the 
 
 ## Project walkthrough
 
+```mermaid
+flowchart LR
+    A["Task states and dependency lists"]
+    B["Validate dependency references"]
+    C{"Any prerequisite incomplete?"}
+    D["Blocked task list"]
+    E["Failed eligible task enters retry list"]
+    A --> B --> C
+    C -->|Yes| D
+    C -->|No| E
+```
+
 [Architecture and data flow](docs/ARCHITECTURE.md) · [Business problem, demo, and verification](docs/CASE_STUDY.md)
