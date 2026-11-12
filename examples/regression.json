@@ -1,0 +1,11 @@
+{
+  "tasks": {
+    "extract": "running",
+    "publish": "failed"
+  },
+  "dependencies": {
+    "publish": [
+      "extract"
+    ]
+  }
+}
