@@ -2,7 +2,7 @@
 
 ## Business problem
 
-Identify failed dependencies before retrying an Azure Databricks-style pipeline.
+Retrying a failed pipeline task before its upstream dependencies recover can repeat the failure and obscure the original blocker.
 
 ## Reproduce the workflow
 

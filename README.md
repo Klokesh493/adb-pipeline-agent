@@ -12,6 +12,10 @@ This offline prototype reads synthetic input and returns a recommendation or dia
 
 Run `make verify` with Make and Python 3 installed. The sample runs through the CLI and its JSON is compared with `expected.json`.
 
+## Business problem
+
+Retrying a failed pipeline task before its upstream dependencies recover can repeat the failure and obscure the original blocker.
+
 ## Project walkthrough
 
 ```mermaid
